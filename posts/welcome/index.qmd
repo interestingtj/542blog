@@ -1,0 +1,85 @@
+---
+title: "What Is Machine Learning?"
+author: "Tengwei Wang"
+date: "2025-01-15"
+categories: [AI]
+---
+
+In 1950, Alan Turing published a paper where he proposed the famous Turing Test: “If a machine can engage in a conversation with a human without being detected as a machine, it has demonstrated human intelligence.” It has become a fundamental motivator in the theory and development of Artificial Intelligence. Although Turing had already theoretically suggested the possibility of machines having intelligence, AI was firstly considered as a distinct field of study in a 1956 summer workshop known as Dartmouth Summer Research Project on Artificial Intelligence. During this workshop, the term and concept of “Artificial Intelligence” were formally established, making it widely regarded as the foundation of AI. It was marked as the beginning of a long and winding technological journey. If we aim to understand the various professional terms related to machine learning, we need to first understand the three early developmental schools of thought in AI.
+
+## The Three Schools of AI Development
+
+In the early days of AI, three major schools emerged: symbolicism (also known as Logicism, Psychologism or Computerism), connectionism (also known as Bionicsism or Physiologism), and actionism (also known as Evolutionism or Cybernetics). These schools were like the martial arts factions of the AI world. They fought, competed, and collaborated with each other. Finally, these three schools formed the theoretical foundation of early AI and influenced its later development.
+
+### Symbolism
+
+Symbolism holds that all human activities (including intellectual and physical activities) follow certain logical rules, and all information can be abstracted into various symbols. Human cognition is seen as a process of manipulating these symbols through logical rules, hence it is also called logicalism. However, when it comes to non-logical thinking, it may be unable to reason effectively.
+
+### Connectionism
+
+Connectionism believes that the key to intelligence is not to replicate intellectual activities in machines but to mimic the structure of the human brain, specifically the connections between neurons. This school is also known as the biomimetic school. It suggests that intelligence results from the combined processing of information by the neural networks in the brain. AI aims to simulate the functioning of neural networks, though this depends on our understanding of the human neural system, which is still not fully grasped.
+
+### Actionism
+
+Actionism originated from cybernetics and emphasizes simulating intelligent behaviors and actions in control processes. This is somewhat like the adaptive mechanisms seen in human interactions, communication, conflict and cooperation. However, due to the limitations of technology, actionism did not gain much attention until the late 20th century when intelligent control systems and robotics began to emerge.
+
+In summary, symbolism excels in knowledge reasoning, connectionism in knowledge modeling, and actionism in perception and action. The integration of these three schools may be the future direction of AI development. What technologies have contributed to the development of AI? You may have encountered terms like machine learning, supervised learning, unsupervised learning, deep learning, reinforcement learning, etc., in an article, video, or paper. What do they mean and how are they related? 
+
+## Machine Learning Theory
+
+### Introduction to Machine Learning
+
+In 1950, Alan Turing, also mentioned earlier, introduced the concept of a “learning machine” in his paper “Computing Machinery and Intelligence.” He emphasized that instead of programming machines to simulate an adult’s brain, we should consider a simpler approach: simulating a child’s brain and teaching the machine through a process of rewards and punishments, allowing it to develop intelligence over time. For example, if we program a computer to recognize red objects as apples and yellow objects as bananas, the program would classify fruit based on explicitly coded logic, which is not machine learning because the machine is not learning. On the other hand, if we feed the computer a large dataset of images of apples and bananas, letting it identify patterns and make predictions about new images, that is machine learning.
+
+The training process for a machine learning model can be broken down into the following four steps:
+
+ - Data Collection: Gathering and preparing data for training the model. The quality of the data directly impacts the model’s performance.
+
+ - Feature Engineering: Extracting relevant features from raw data to make it more suitable for machine learning algorithms.
+
+ - Model Training: Using the feature-engineered data to train the model, allowing the algorithm to generate the model.
+
+ - Evaluation and Application: Applying the trained model to execute tasks and evaluating its performance, typically using a test set to assess accuracy and other performance metrics. If the model performs as expected, it can be deployed for making predictions or decisions.
+
+### Supervised vs. Unsupervised Learning
+
+Machine learning can be broadly categorized into supervised and unsupervised learning, which differ in the type of training data and learning goals.
+
+#### Supervised Learning:
+The goal of supervised learning is to learn the mapping between input data and output labels to make accurate predictions on new, unseen data. Supervised learning is like a student doing homework and having a teacher correcting their mistakes. Supervised learning is typically used for classification and regression problems.
+
+ - Classification: In classification problems, the model’s goal is to predict discrete class labels. For example, a model is trained with images of cats and dogs, and then used to predict whether a new image is of a cat or a dog.
+
+ - Regression: In regression problems, the model’s goal is to predict continuous values. For example, using data about houses, the model predicts the price of an unseen house.
+
+#### Unsupervised Learning:
+The goal of unsupervised learning is to discover patterns and structures within the data, rather than making predictions. Unsupervised learning is like a student being given a large set of unsolved problems and asked to find patterns on their own. Unsupervised learning is usually used for clustering and association rule learning.
+
+ - Clustering: In clustering problems, the model groups data into clusters, where similar data points are grouped together, and dissimilar points are separated.
+
+ - Association Rule Learning: In association rule learning, the model seeks relationships between features in the data.
+
+### Perceptron and Neural Network Algorithms
+
+Within machine learning, supervised and unsupervised learning are foundational techniques that are easy to grasp. The perceptron algorithm is a typical example of supervised learning and is the foundation of artificial neural networks. Let’s simplify how a perceptron works with an example: Imagine a student wants to predict whether they will pass a course based on past students’ grades. They set up a scoring formula: first assignment (30%), second assignment (30%), and exam (40%) decide course score. If the score is 60 or above, they pass; otherwise, they fail. The student applies this formula to past data, but finds that either everyone passes or everyone fails. So, they adjust the weights of assignments and exams to improve the prediction.
+
+This process can be done by a simple perceptron program, where the assignment and exam grades act as input nodes (similar to neurons receiving information). The result, pass or fail, is an output node, and the calculation of the score is done through an activation function. By adjusting the weights, the model learns how to classify students. Artificial neural networks consist of multiple perceptrons, including input and output layers, as well as hidden layers. These hidden layers allow the network to capture more complex data patterns and relationships, thus improving its predictive power.
+
+### Reinforcement Learning Algorithms
+
+Reinforcement learning is one of the core technologies behind AIGC and large models. In March 2016, Google’s DeepMind developed an AI program called AlphaGo, which defeated the world champion Lee Sedol in a best-of-five Go match with a 4-1 score. The training process for AlphaGo incorporated reinforcement learning. Reinforcement learning is a branch of machine learning focused on how an agent takes actions in an environment to maximize cumulative rewards over time. Unlike supervised and unsupervised learning, reinforcement learning learns through interaction with the environment. In reinforcement learning, the agent learns how to navigate the environment to achieve the highest possible reward.
+
+### Deep Learning Algorithms
+
+In machine learning, feature selection is crucial for training models. However, for tasks like image and text processing, it is challenging to extract meaningful features directly. Machines need to learn deep relationships within the data rather than just surface-level features. This is where deep neural networks come in. Deep learning simulates how the human brain processes information, using multi-layered neural networks to learn complex patterns in large datasets. It is particularly effective for handling large-scale data and is closely related to supervised, unsupervised, and reinforcement learning. In conclusion, deep learning algorithms can combine supervised learning, unsupervised learning, and reinforcement learning to improve model performance. Most models today are based on deep reinforcement learning frameworks.
+
+
+## References
+
+[1] Stanford Encyclopedia of Philosophy. "The Turing Test." https://plato.stanford.edu/entries/turing-test/
+
+[2] Solomonoff, Grace (2023-05-06). "The Meeting of the Minds That Launched AI". ieeespectrum. Retrieved 2024-06-19.
+
+[3] Liu, Shen. "Chapter I Overview of AI Technology". https://www.liu-shen.com/Content-3151.html
+
+[4] Turing, A. M. (2009). Computing machinery and intelligence (pp. 23-65). Springer Netherlands.
